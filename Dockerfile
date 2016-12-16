@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-add-repository ppa:brightbox/ruby-ng && \
     apt-get update && \
     apt-get -y install ruby2.2 ruby2.2-dev make && \
-    gem install test-kitchen kitchen-docker
+    gem install berkshelf test-kitchen kitchen-docker
 
 ENV LOG=file
 ENTRYPOINT ["wrapdocker"]
